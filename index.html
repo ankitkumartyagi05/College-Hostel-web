@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Warrior Institute of Technology, Bokaro (WIT)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <!-- Animated RGB Background -->
+  <div class="rgb-bg"></div>
+  <div class="dark-overlay"></div>
+
+  <header>
+    <div class="logo">WIT</div>
+    <h1>Warrior Institute of Technology, Bokaro (WIT)</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home" class="active" onclick="showPage('home', this)">Home</a></li>
+      <li><a href="#about" onclick="showPage('about', this)">About</a></li>
+      <li><a href="#courses" onclick="showPage('courses', this)">Courses</a></li>
+      <li><a href="#admission" onclick="showPage('admission', this)">Admission</a></li>
+      <li><a href="#academic" onclick="showPage('academic', this)">Academic</a></li>
+      <li><a href="#library" onclick="showPage('library', this)">Library</a></li>
+      <li><a href="#placement" onclick="showPage('placement', this)">Placement</a></li>
+      <li><a href="#activities" onclick="showPage('activities', this)">Activities</a></li>
+      <li><a href="#hostel" onclick="showPage('hostel', this)">Hostel</a></li>
+      <li><a href="#notice" onclick="showPage('notice', this)">Notice Board</a></li>
+      <li><a href="#events" onclick="showPage('events', this)">Events</a></li>
+      <li><a href="#contact" onclick="showPage('contact', this)">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="active">
+    <div class="hero">
+      <div class="slideshow" id="homeSlideshow">
+        <div class="slide active"><img src="pexels-liam-o-neill-the-explorer-panda-114076-357271.jpg" alt="Campus View">
+        </div>
+        <div class="slide"><img src="pexels-pixabay-267885.jpg" alt="Classroom"></div>
+        <div class="slide"><img src="pexels-rafael-cosquiere-1059286-2041540.jpg" alt="Library"></div>
+        <div class="dots"></div>
+      </div>
+
+      <div class="hero-content">
+        <h2>Welcome The college Website</h2>
+        <p>
+          Our college is a center of academic excellence dedicated to providing high quality education and a strong
+          foundation for professional success. With a focus on innovation, discipline, and ethical values, the
+          institution aims to develop skilled graduates who are capable of meeting the challenges of the modern world.
+        </p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="pexels-pixabay-267885.jpg" alt="Quality Education">
+        <h3>📚 Quality Education</h3>
+        <p>Comprehensive curriculum with focus on practical knowledge and industry relevance.</p>
+      </div>
+      <div class="card">
+        <img src="pexels-liam-o-neill-the-explorer-panda-114076-357271.jpg" alt="Smart Campus">
+        <h3>🏫 Smart Campus</h3>
+        <p>Modern infrastructure equipped with latest technology for enhanced learning.</p>
+      </div>
+      <div class="card">
+        <img src="pexels-thisisengineering-3861959.jpg" alt="Expert Faculty">
+        <h3>👨‍🏫 Expert Faculty</h3>
+        <p>Highly qualified and experienced faculty dedicated to student success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-container">
+      <h1 class="section-title">About Our College</h1>
+      <p class="section-intro">Learn why Warrior Institute of Technology is a leader in academic excellence — modern
+        labs, supportive faculty, and a vibrant campus life.</p>
+      <div class="section-slideshow">
+        <div class="slideshow about-slideshow" aria-label="About slideshow">
+          <!--  
+        <div class="slide active"><img src="upload/pexels-magda-ehlers-pexels-35280158.jpg" alt="Campus"></div>
+        <div class="slide"><img src="upload/pexels-thisisengineering-3861964.jpg" alt="Library"></div>
+        <div class="slide"><img src="upload/pexels-rafael-cosquiere-1059286-2041540.jpg" alt="Laboratory"></div>
+        -->
+          <div class="dots"></div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Our college is a distinguished institution of higher education dedicated to providing quality learning and
+            holistic development of students. Established with the vision of nurturing academic excellence, the
+            institution focuses on creating a strong foundation of knowledge, practical skills, and ethical values.
+          </p>
+          <p>
+            The institution is supported by a team of highly qualified and experienced faculty members who are committed
+            to guiding students throughout their academic journey. Teaching methodologies combine traditional classroom
+            instruction with modern educational practices, ensuring clarity of concepts and real-world applicability.
+          </p>
+          <p>
+            Our college provides modern infrastructure and learning resources, including well-equipped laboratories, a
+            comprehensive library, digital learning facilities, and a disciplined academic environment.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <h3>2005</h3>
+            <p>Year Established</p>
+          </div>
+          <div class="stat">
+            <h3>5000+</h3>
+            <p>Students</p>
+          </div>
+          <div class="stat">
+            <h3>250+</h3>
+            <p>Faculty Members</p>
+          </div>
+          <div class="stat">
+            <h3>50+</h3>
+            <p>Programs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses">
+    <div class="section-container">
+      <h1 class="section-title">Our Courses</h1>
+      <p id="program">Academic Programs Offered</p>
+
+      <div class="course-box">
+        <div class="course">
+          <img src="pexels-magda-ehlers-pexels-35280158.jpg" alt="Engineering">
+          <h3>Engineering</h3>
+          <p>B.Tech in Computer Science, Mechanical, Civil, Electrical, and more.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-thisisengineering-3861964.jpg" alt="BCA">
+          <h3>BCA</h3>
+          <p>Bachelor of Computer Applications with focus on software development.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-thisisengineering-3861959.jpg" alt="MCA">
+          <h3>MCA</h3>
+          <p>Master of Computer Applications with advanced programming skills.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-mikhail-nilov-7820323.jpg" alt="Management">
+          <h3>Management</h3>
+          <p>BBA and other management programs with industry exposure.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-edmond-dantes-4345104.jpg" alt="MBA">
+          <h3>MBA</h3>
+          <p>Master of Business Administration with specializations in Marketing, Finance, HR.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-zandatsu-32213307.jpg" alt="Science">
+          <h3>Bachelor of Science</h3>
+          <p>B.Sc. in Physics, Chemistry, Mathematics, Computer Science, and more.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-zandatsu-32213307.jpg" alt="Nursing">
+          <h3>Bachelor of Nursing</h3>
+          <p>Comprehensive nursing program with practical training in healthcare.</p>
+        </div>
+        <div class="course">
+          <img src="pexels-cottonbro-5722883.jpg" alt="Pharmacy">
+          <h3>Bachelor of Pharmacy</h3>
+          <p>B.Pharm with focus on pharmaceutical sciences and research.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admission Section -->
+  <section id="admission">
+    <div class="section-container">
+      <h1 class="section-title">Admission Inquiry</h1>
+
+      <div class="admission-content">
+        <div class="admission-form-container">
+          <form id="admissionForm">
+            <h2>Apply Now</h2>
+            <div class="form-row">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+              <input type="text" id="phone" placeholder="Phone Number" required>
+              <input type="text" id="course" placeholder="Course Interested In" required>
+            </div>
+            <textarea id="message" placeholder="Additional Information"></textarea>
+            <button type="submit">Submit Application</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+
+        <div class="admission-info">
+          <h3>Admission Process</h3>
+          <ol>
+            <li>Fill out the application form</li>
+            <li>Submit required documents</li>
+            <li>Appear for entrance examination (if applicable)</li>
+            <li>Attend personal interview</li>
+            <li>Complete admission formalities</li>
+          </ol>
+
+          <h3>Important Dates</h3>
+          <ul>
+            <li>Application Start: April 1, 2025</li>
+            <li>Application Deadline: June 30, 2025</li>
+            <li>Entrance Exam: July 15, 2025</li>
+            <li>Result Announcement: July 30, 2025</li>
+            <li>Academic Session Begins: August 15, 2025</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Section -->
+  <section id="academic">
+    <div class="section-container">
+      <h1 class="section-title">Academic</h1>
+      <div class="academic-content">
+        <div class="academic-text">
+          <p>
+            The academic framework of the college is designed to promote excellence in teaching, learning, and research
+            while meeting the evolving demands of higher education and industry. The institution offers a structured and
+            outcome-oriented academic environment that emphasizes conceptual understanding, practical application, and
+            continuous evaluation.
+          </p>
+          <p>
+            Academic programs are delivered in accordance with the curriculum and guidelines prescribed by the
+            affiliating university and relevant regulatory bodies, ensuring quality, standardization, and relevance.
+          </p>
+        </div>
+
+        <div class="academic-highlights">
+          <div class="highlight">
+            <h3>Teaching Methodology</h3>
+            <p>Our teaching methodology combines classroom lectures with practical sessions, seminars, workshops, and
+              project-based learning to provide comprehensive education.</p>
+          </div>
+          <div class="highlight">
+            <h3>Assessment System</h3>
+            <p>We follow a continuous assessment system with regular assignments, quizzes, mid-term and end-term
+              examinations to evaluate student progress.</p>
+          </div>
+          <div class="highlight">
+            <h3>Research & Development</h3>
+            <p>The institution encourages research activities among faculty and students through dedicated research
+              centers and funding opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Section -->
+  <section id="library">
+    <div class="section-container">
+      <h1 class="section-title">Library</h1>
+      <div class="library-content">
+        <div class="library-image">
+          <img src="pexels-rafael-cosquiere-1059286-2041540.jpg" alt="Library">
+        </div>
+        <div class="library-info">
+          <h3>Our Library Resources</h3>
+          <p>Our college library is a treasure trove of knowledge with a vast collection of books, journals,
+            periodicals, and digital resources. Spread over 10,000 square feet, the library provides a conducive
+            environment for learning and research.</p>
+
+          <div class="library-stats">
+            <div class="stat">
+              <h3>50,000+</h3>
+              <p>Books</p>
+            </div>
+            <div class="stat">
+              <h3>100+</h3>
+              <p>Journals</p>
+            </div>
+            <div class="stat">
+              <h3>20+</h3>
+              <p>Databases</p>
+            </div>
+            <div class="stat">
+              <h3>24/7</h3>
+              <p>Digital Access</p>
+            </div>
+          </div>
+
+          <h3>Library Facilities</h3>
+          <ul>
+            <li>Reading halls with seating capacity of 500 students</li>
+            <li>Digital library with access to e-books and e-journals</li>
+            <li>Reference section for faculty and researchers</li>
+            <li>Book bank facility for meritorious students</li>
+            <li>Reprography and printing services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Section -->
+  <section id="placement">
+    <div class="section-container">
+      <h1 class="section-title">Placement</h1>
+      <div class="placement-content">
+        <div class="placement-stats">
+          <div class="stat">
+            <h3>95%</h3>
+            <p>Placement Rate</p>
+          </div>
+          <div class="stat">
+            <h3>200+</h3>
+            <p>Recruiting Companies</p>
+          </div>
+          <div class="stat">
+            <h3>12 LPA</h3>
+            <p>Highest Package</p>
+          </div>
+          <div class="stat">
+            <h3>4.5 LPA</h3>
+            <p>Average Package</p>
+          </div>
+        </div>
+
+        <div class="placement-info">
+          <h3>Our Placement Cell</h3>
+          <p>Our dedicated placement cell works tirelessly to ensure that every student gets the best possible start to
+            their career. We maintain strong relationships with leading companies across various industries and organize
+            regular recruitment drives, campus interviews, and job fairs.</p>
+
+          <h3>Top Recruiters</h3>
+          <div class="recruiters">
+            <div class="recruiter">TCS</div>
+            <div class="recruiter">Infosys</div>
+            <div class="recruiter">Wipro</div>
+            <div class="recruiter">HCL</div>
+            <div class="recruiter">IBM</div>
+            <div class="recruiter">Microsoft</div>
+            <div class="recruiter">Google</div>
+            <div class="recruiter">Amazon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities">
+    <div class="section-container">
+      <h1 class="section-title">Activities</h1>
+      <p class="section-intro">From sports to tech clubs and social initiatives, WIT encourages students to explore
+        talents beyond the classroom.</p>
+      <div class="section-slideshow">
+        <div class="slideshow activities-slideshow" aria-label="Activities slideshow">
+          <!--  
+        <div class="slide active"><img src="upload/pexels-rafael-cosquiere-1059286-2041540.jpg" alt="Sports"></div>
+        <div class="slide"><img src="upload/pexels-magda-ehlers-pexels-35280158.jpg" alt="Cultural"></div>
+        <div class="slide"><img src="upload/pexels-mikhail-nilov-7820323.jpg" alt="Workshop"></div>
+        -->
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="activities-content">
+        <div class="activity-category">
+          <h3>Sports</h3>
+          <p>Our college offers excellent sports facilities including cricket ground, football field, basketball courts,
+            and indoor games. Regular tournaments and competitions are organized to promote physical fitness and team
+            spirit.</p>
+        </div>
+
+        <div class="activity-category">
+          <h3>Cultural Events</h3>
+          <p>The annual cultural fest "Techno-Cultura" is a highlight of our college calendar, featuring music, dance,
+            drama, and various competitions. Students showcase their talents and celebrate diversity through these
+            events.</p>
+        </div>
+
+        <div class="activity-category">
+          <h3>Technical Clubs</h3>
+          <p>We have various technical clubs including Coding Club, Robotics Club, Electronics Club, and more. These
+            clubs organize workshops, seminars, and hackathons to enhance technical skills.</p>
+        </div>
+
+        <div class="activity-category">
+          <h3>Social Initiatives</h3>
+          <p>Our NSS unit and social outreach programs involve students in community service, awareness campaigns, and
+            environmental conservation activities, fostering a sense of social responsibility.</p>
+        </div>
+      </div>
+
+      <div class="activity-gallery">
+        <img src="upload/pexels-rafael-cosquiere-1059286-2041540.jpg" alt="Sports Activity">
+        <img src="upload/pexels-magda-ehlers-pexels-35280158.jpg" alt="Cultural Event">
+        <img src="upload/pexels-mikhail-nilov-7820323.jpg" alt="Technical Workshop">
+        <img src="upload/pexels-liam-o-neill-the-explorer-panda-114076-357271.jpg" alt="Social Initiative">
+      </div>
+    </div>
+  </section>
+
+  <!-- Hostel Section (New) -->
+  <section id="hostel">
+    <div class="section-container">
+      <h1 class="section-title">Hostel Facilities</h1>
+      <div class="hostel-content">
+        <div class="hostel-card">
+          <h3>Boys Hostel</h3>
+          <img src="https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg" alt="Boys Hostel">
+          <ul>
+            <li>Single, double, and triple sharing rooms available</li>
+            <li>24/7 security with CCTV surveillance</li>
+            <li>Wi-Fi connectivity throughout the premises</li>
+            <li>Hygienic mess with nutritious food</li>
+            <li>Recreation room with TV and indoor games</li>
+            <li>Laundry and housekeeping services</li>
+          </ul>
+        </div>
+
+        <div class="hostel-card">
+          <h3>Girls Hostel</h3>
+          <img src="https://images.pexels.com/photos/271743/pexels-photo-271743.jpeg" alt="Girls Hostel">
+          <ul>
+            <li>Well-furnished rooms with modern amenities</li>
+            <li>Strict security with female wardens</li>
+            <li>High-speed internet connectivity</li>
+            <li>Nutritious and hygienic food</li>
+            <li>Common room for recreational activities</li>
+            <li>Medical facilities on call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="facilities">
+        <div class="facility-icon">
+          <i class="fas fa-wifi"></i>
+          <span>WiFi</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-utensils"></i>
+          <span>Mess</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-shield-alt"></i>
+          <span>Security</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-tint"></i>
+          <span>Hot Water</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-dumbbell"></i>
+          <span>Gym</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-book"></i>
+          <span>Study Room</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-tv"></i>
+          <span>Common Room</span>
+        </div>
+        <div class="facility-icon">
+          <i class="fas fa-first-aid"></i>
+          <span>Medical</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notice Board Section (New) -->
+  <section id="notice">
+    <div class="section-container">
+      <h1 class="section-title">Notice Board</h1>
+      <div class="notice-board">
+        <div class="notice-item notice-new">
+          <h4>Examination Schedule Released</h4>
+          <p>End semester examinations will commence from 15th January 2024. Detailed timetable available on student
+            portal.</p>
+          <small>Posted: Dec 28, 2023</small>
+        </div>
+        <div class="notice-item">
+          <h4>Hostel Fee Payment Reminder</h4>
+          <p>Last date for hostel fee payment for Jan-Mar 2024 quarter is 5th January 2024. Late payment charges
+            applicable.</p>
+          <small>Posted: Dec 25, 2023</small>
+        </div>
+        <div class="notice-item">
+          <h4>Workshop on AI & Machine Learning</h4>
+          <p>Department of Computer Science organizing a 3-day workshop from 10th-12th January 2024. Register by 5th
+            January.</p>
+          <small>Posted: Dec 22, 2023</small>
+        </div>
+        <div class="notice-item">
+          <h4>Sports Meet 2024</h4>
+          <p>Annual sports meet scheduled from 20th-22nd January 2024. Last date for registration: 10th January 2024.
+          </p>
+          <small>Posted: Dec 20, 2023</small>
+        </div>
+        <div class="notice-item">
+          <h4>Placement Drive - Tech Companies</h4>
+          <p>Multiple tech companies visiting campus for placements in February 2024. Update your resumes on the
+            placement portal.</p>
+          <small>Posted: Dec 18, 2023</small>
+        </div>
+        <div class="notice-item">
+          <h4>Library Timings Extended</h4>
+          <p>Library will remain open till 10:00 PM during examination period (15th-30th January 2024).</p>
+          <small>Posted: Dec 15, 2023</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Calendar Section (New) -->
+  <section id="events">
+    <div class="section-container">
+      <h1 class="section-title">Event Calendar</h1>
+      <div class="event-calendar">
+        <div class="event-card event-academic">
+          <div class="event-date">Jan 5</div>
+          <h4>Faculty Development Program</h4>
+          <p>Workshop on modern teaching methodologies</p>
+          <span class="event-badge badge-academic">Academic</span>
+        </div>
+        <div class="event-card event-sports">
+          <div class="event-date">Jan 10</div>
+          <h4>Cricket Tournament</h4>
+          <p>Inter-department cricket championship</p>
+          <span class="event-badge badge-sports">Sports</span>
+        </div>
+        <div class="event-card event-cultural">
+          <div class="event-date">Jan 15</div>
+          <h4>Cultural Fest - "Techno-Cultura"</h4>
+          <p>Annual cultural festival with music, dance, and drama</p>
+          <span class="event-badge badge-cultural">Cultural</span>
+        </div>
+        <div class="event-card event-academic">
+          <div class="event-date">Jan 18</div>
+          <h4>Guest Lecture - Industry Expert</h4>
+          <p>Talk on "Future of Technology in Business"</p>
+          <span class="event-badge badge-academic">Academic</span>
+        </div>
+        <div class="event-card event-sports">
+          <div class="event-date">Jan 22</div>
+          <h4>Athletics Meet</h4>
+          <p>Track and field events</p>
+          <span class="event-badge badge-sports">Sports</span>
+        </div>
+        <div class="event-card event-cultural">
+          <div class="event-date">Jan 26</div>
+          <h4>Republic Day Celebration</h4>
+          <p>Flag hoisting and cultural program</p>
+          <span class="event-badge badge-cultural">Cultural</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (New) -->
+  <section id="contact">
+    <div class="section-container">
+      <h1 class="section-title">Contact Us</h1>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form id="contactForm">
+            <h3>Get in Touch</h3>
+            <input type="text" id="contactName" placeholder="Your Name" required>
+            <input type="email" id="contactEmail" placeholder="Your Email" required>
+            <input type="tel" id="contactPhone" placeholder="Phone Number">
+
+            <label for="contactRole">Select Role:</label>
+            <select id="contactRole" required>
+              <option value="">Select Role</option>
+              <option value="student">Student</option>
+              <option value="parent">Parent</option>
+              <option value="staff">Staff</option>
+              <option value="visitor">Visitor</option>
+            </select>
+            <input type="text" id="contactSubject" placeholder="Subject" required>
+            <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="contactFormMessage" class="form-message"></div>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h4><i class="fas fa-map-marker-alt"></i>Address</h4>
+            <p>Warrior Institute of Technology, Bokaro (WIT)<br>
+              Sector 4, Bokaro Steel City<br>
+              Jharkhand - 827004</p>
+          </div>
+
+          <div class="info-card">
+            <h4><i class="fas fa-phone"></i>Contact</h4>
+            <p>Phone: +91-6542-234567<br>
+              Email: info@witbokaro.edu.in</p>
+          </div>
+
+          <div class="info-card">
+            <h4><i class="fas fa-clock"></i>Office Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+              Saturday: 9:00 AM - 1:00 PM<br>
+              Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Warrior Institute of Technology</h3>
+        <p>Providing quality education since 2005</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="fab fa-facebook fa-2x me-3"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x me-3"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x me-3"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home" onclick="showPage('home', this)">Home</a></li>
+          <li><a href="#about" onclick="showPage('about', this)">About</a></li>
+          <li><a href="#courses" onclick="showPage('courses', this)">Courses</a></li>
+          <li><a href="#admission" onclick="showPage('admission', this)">Admission</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Warrior Institute of Technology<br>
+          Sector 4, Bokaro Steel City<br>
+          Jharkhand - 827004<br>
+          Email: info@witbokaro.edu.in<br>
+          Phone: +91-6542-234567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Warrior Institute of Technology | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
